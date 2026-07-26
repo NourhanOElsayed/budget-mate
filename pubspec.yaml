@@ -1,19 +1,74 @@
 name: budget_mate
 description: "A new Flutter project."
-publish_to: 'none'
-version: 0.1.0
+publish_to: 'none' 
+version: 1.0.0+1
 
 environment:
-  sdk: ^3.9.2
+  sdk: ">=3.6.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Architecture & State Management
+  get_it: ^9.2.1
+  flutter_bloc: ^9.1.1
+  hydrated_bloc: ^11.0.0
+  bloc: ^9.2.1
+  path_provider: ^2.1.6 
+  flutter_secure_storage: ^10.3.1
+  shared_preferences: ^2.5.5
+  go_router: ^17.3.0
+  smooth_page_indicator: ^2.0.1
+  fpdart: ^1.2.0
+
+  # UI & Design
+  flutter_svg: ^2.0.7
+  custom_sliding_segmented_control: ^1.8.5
+  intl: ^0.20.2
+  shimmer: ^3.0.0
+  syncfusion_flutter_charts: ^34.1.32
+  flutter_screenutil: ^5.9.3
+  flutter_icon_snackbar: ^1.2.1
+  pinput: ^6.0.2
+  font_awesome_flutter: ^11.0.0
+  animated_flip_counter: ^0.3.4
+  currency_text_input_formatter: ^2.3.1
+  flutter_animate: ^4.5.2
+  family_bottom_sheet: ^0.1.0
+  gap: ^3.0.1
+  flutter_localizations:
+    sdk: flutter
+
+  # Networking & API
+  supabase_flutter: ^2.16.0
+  equatable: ^2.1.0
+  uuid: ^4.6.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+  intl_utils: ^2.8.16
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
